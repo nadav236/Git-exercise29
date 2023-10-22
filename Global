@@ -10,7 +10,7 @@ class converter:
         else:
             num = int((self.volt)*204.6)
             binary = format(num,'b')
-            self.maxBit = len(binary)
+            self.bits = len(binary)
             return binary
 
     def SetDigitalValue(self):
